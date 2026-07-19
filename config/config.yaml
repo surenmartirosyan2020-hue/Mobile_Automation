@@ -1,0 +1,23 @@
+app:
+  path: "apps/mda-2.2.0-25.apk"
+  package: "com.saucelabs.mydemoapp.android"
+  activity: "com.saucelabs.mydemoapp.android.view.activities.SplashActivity"
+
+device:
+  name: "emulator-5554"
+  platform_version: "15"
+
+appium:
+  url: "http://127.0.0.1:4725"
+  auto_grant_permissions: true
+  new_command_timeout: 300
+  uiautomator2_server_launch_timeout: 120000
+  uiautomator2_server_install_timeout: 120000
+  adb_exec_timeout: 120000
+
+waits:
+  explicit_seconds: 20
+
+dialogs:
+  skip_all: true
+  rounds: 10
